@@ -1,7 +1,7 @@
 # Digital Signal Processing(DSP) project
 # 🩺 ECG Signal Preprocessing (MATLAB)
 
-This project focuses on preprocessing raw ECG (Electrocardiogram) signals using MATLAB. The goal is to clean the signals by removing various types of noise such as baseline wander, power line interference, and high-frequency artifacts. Preprocessing enhances signal quality and prepares the data for further analysis like QRS detection or classification tasks.
+This project focuses on preprocessing raw ECG (Electrocardiogram) signals using MATLAB. The goal is to clean the signals by removing various types of noise such as baseline wander, power line interference, and high-frequency artifacts. Preprocessing enhances signal quality and prepares the data for further analysis like QRS detection or classification tasks.This system was developed as part of the DSP course project under the guidance of Dr. Prabhakar Manage.
 
 ---
 
