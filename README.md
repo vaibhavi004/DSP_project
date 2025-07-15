@@ -29,5 +29,27 @@ ECG signals often contain noise due to patient movement, electrode contact issue
 
 ---
 
+# 🔬 Methodology
+
+The ECG signal preprocessing pipeline involves the following stages:
+
+1. **Data Acquisition**  
+   - ECG signal is loaded from a `.mat` file (`rec_5.mat`) at a sampling rate of 500 Hz.
+   - The signal is preprocessed for a sample window of 4000 data points.
+
+2. **Preprocessing**  
+   - Noise and artifacts are removed using three main filters:
+     - High-pass (Baseline wander)
+     - Low-pass (High-frequency noise)
+     - Notch (Power-line interference)
+
+3. **QRS Detection**  
+   - Derivative, rectification, and smoothing are applied to highlight the QRS complex.
+   - `findpeaks` function detects R-peaks.
+
+4. **Heart Rate Calculation**  
+   - Time between successive R-peaks is measured and converted to beats per minute (BPM).
+
+
 
 
