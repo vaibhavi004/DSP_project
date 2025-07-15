@@ -65,6 +65,24 @@ The following preprocessing steps were applied to improve the quality of the ECG
 
 These steps significantly enhance signal clarity, enabling accurate QRS complex detection and heart rate calculation.
 
+## 📊 Results
+
+The preprocessing steps significantly improved the ECG signal quality and enabled accurate R-peak detection. Below is a visualization of each step from raw signal to QRS detection
+
+<img width="1145" height="647" alt="ecg_implementation_results" src="https://github.com/user-attachments/assets/2fc280b8-7ff7-4f98-9d40-bd5b783d1bc1" />
+
+**Figure:**
+1. Raw ECG Signal  
+2. After Baseline Wander Removal  
+3. After High-Frequency Noise Removal  
+4. After Power Line Interference Removal  
+5. Smoothed Signal for R-Peak Detection  
+6. Final Filtered ECG Signal with R-Peaks Marked
+
+The pipeline results in a clear signal and accurate heart rate estimation using detected R-R intervals.
+
+
+
 
 
 
