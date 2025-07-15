@@ -50,6 +50,22 @@ The ECG signal preprocessing pipeline involves the following stages:
 4. **Heart Rate Calculation**  
    - Time between successive R-peaks is measured and converted to beats per minute (BPM).
 
+## 🧹 ECG Preprocessing Techniques
+
+The following preprocessing steps were applied to improve the quality of the ECG signal before analysis:
+
+- **Baseline Wander Removal**  
+  A high-pass filter eliminates slow, low-frequency drifts caused by respiration or body movement. This helps stabilize the ECG baseline.
+
+- **High-Frequency Noise Suppression**  
+  A low-pass filter is used to remove high-frequency artifacts, such as muscle noise or electrical interference, while preserving important cardiac features.
+
+- **Power-Line Interference Removal**  
+  A notch filter centered at 50 Hz (typical of power-line noise) effectively removes electrical interference without distorting the main ECG signal.
+
+These steps significantly enhance signal clarity, enabling accurate QRS complex detection and heart rate calculation.
+
+
 
 
 
